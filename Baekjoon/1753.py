@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/1965
+# https://www.acmicpc.net/problem/1753
 import sys
 import heapq
 
