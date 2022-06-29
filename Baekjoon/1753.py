@@ -22,20 +22,22 @@ def dijkstra(start: int, costs):
                 costs[i[0]] = distance
                 heapq.heappush(q, [distance, i[0]])
 
+    return costs
+
 
 v, e = map(int, sys.stdin.readline()[:-1].split(' '))
 start = int(sys.stdin.readline()[:-1]) - 1
-costs = [1e9 for _ in range(v)]
+costs = [int(1e9) for _ in range(v)]
 graph = [list() for _ in range(v)]
 
 for i in range(e):
     u, v, w = map(int, sys.stdin.readline()[:-1].split(' '))
     graph[u - 1].append([v - 1, w])
 
-dijkstra(start, costs)
+costs = dijkstra(start, costs)
 
 for cost in costs:
-    if cost == 1e9:
+    if cost == int(1e9):
         print('INF')
     else:
         print(cost)
