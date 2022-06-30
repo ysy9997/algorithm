@@ -11,6 +11,8 @@ def rot(mat, angle):
         clock = False
         n = -n
 
+    # 기본 점이 8 방향 중 하나에 있고, 거기서 다른 방향으로 이동시켜주면 됨
+
 
 
 
