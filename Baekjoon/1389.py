@@ -60,8 +60,12 @@ n, m = map(int, sys.stdin.readline().split())
 graph = [[] for _ in range(n)]
 for i in range(m):
     a, b = map(int, sys.stdin.readline().split())
-    graph[a - 1].append(b - 1)
-    graph[b - 1].append(a - 1)
+    a = a - 1
+    b = b - 1
+
+    if a not in graph[b]:
+        graph[a].append(b)
+        graph[b].append(a)
 
 min_val = 1e9
 who = -1
