@@ -1,4 +1,4 @@
-# https://www.acmicpc.net/problem/1107
+# https://www.acmicpc.net/problem/1260
 import sys
 import collections
 
