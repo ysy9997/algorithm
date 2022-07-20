@@ -22,4 +22,3 @@ print(count)
 for name in names:
     if name[1] == 1:
         print(name[0])
-
