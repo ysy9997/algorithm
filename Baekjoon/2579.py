@@ -15,4 +15,3 @@ else:
         total[n] = max(total[n - 3] + scores[n - 1] + scores[n], total[n - 2] + scores[n])
 
     print(total[-1])
-
